@@ -13,6 +13,9 @@ struct DetailView: View {
     @EnvironmentObject var store: MemoStroe
     
     @State private var showComposer = false
+    @State private var showDeleteAlret = false
+    
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         VStack {
@@ -37,6 +40,23 @@ struct DetailView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItemGroup(placement: .bottomBar) {
+                Button {
+                    showDeleteAlret = true
+                } label: {
+                    Image(systemName: "trash")
+                }
+                .foregroundColor(.red)
+                .alert("Delete Check", isPresented: $showDeleteAlret) {
+                    Button(role: .destructive) {
+                        store.delete(memo: memo)
+                        dismiss()
+                    } label: {
+                        Text("Delete")
+                    }
+                } message: {
+                    Text("Do you want?")
+                }
+                
                 Button {
                     showComposer = true
                 } label: {
