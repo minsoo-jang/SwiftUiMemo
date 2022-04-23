@@ -25,6 +25,8 @@
 		433DEDF528143CC300F4E5FB /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433DEDF328143CC300F4E5FB /* MemoCell.swift */; };
 		433DEDF728143D3A00F4E5FB /* ComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433DEDF628143D3A00F4E5FB /* ComposeView.swift */; };
 		433DEDF828143D3A00F4E5FB /* ComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433DEDF628143D3A00F4E5FB /* ComposeView.swift */; };
+		433DEDFA2814408400F4E5FB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433DEDF92814408400F4E5FB /* DetailView.swift */; };
+		433DEDFB2814408400F4E5FB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433DEDF92814408400F4E5FB /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,7 @@
 		433DEDEC2814379600F4E5FB /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
 		433DEDF328143CC300F4E5FB /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
 		433DEDF628143D3A00F4E5FB /* ComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeView.swift; sourceTree = "<group>"; };
+		433DEDF92814408400F4E5FB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,7 @@
 				433DEDF328143CC300F4E5FB /* MemoCell.swift */,
 				433DEDE42814339400F4E5FB /* MainListView.swift */,
 				433DEDF628143D3A00F4E5FB /* ComposeView.swift */,
+				433DEDF92814408400F4E5FB /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -225,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				433DEDF428143CC300F4E5FB /* MemoCell.swift in Sources */,
+				433DEDFA2814408400F4E5FB /* DetailView.swift in Sources */,
 				433DEDD2281432FB00F4E5FB /* SwiftUiMemo.xcdatamodeld in Sources */,
 				433DEDED2814379600F4E5FB /* MemoStore.swift in Sources */,
 				433DEDE52814339400F4E5FB /* MainListView.swift in Sources */,
@@ -240,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				433DEDF528143CC300F4E5FB /* MemoCell.swift in Sources */,
+				433DEDFB2814408400F4E5FB /* DetailView.swift in Sources */,
 				433DEDD3281432FB00F4E5FB /* SwiftUiMemo.xcdatamodeld in Sources */,
 				433DEDEE2814379600F4E5FB /* MemoStore.swift in Sources */,
 				433DEDE62814339400F4E5FB /* MainListView.swift in Sources */,

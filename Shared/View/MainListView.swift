@@ -12,11 +12,14 @@ struct MainListView: View {
     
     @State private var showComposer: Bool = false
     
-    
     var body: some View {
         NavigationView {
             List(store.list) { memo in
-                MemoCell(memo: memo)
+                NavigationLink {
+                    DetailView(memo: memo)
+                } label: {
+                    MemoCell(memo: memo)
+                }
             }
             .listStyle(.plain)
             .navigationTitle("My Memo")
